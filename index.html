@@ -107,9 +107,9 @@
 
         async function predict() {
             var dic_class2information = {};
-            dic_class2information['포메라니안'] = '포메라니안(Pomeranian)이라는 이름의 유래는 사모예드와 스피츠를 열심히 소형화시켜 실내견으로 만들어낸 북독일의 포메른 공국에서 따왔다.';
-            dic_class2information['푸들'] = '푸들(poodle)은 개의 품종 중 하나이며, 프랑스의 국견이다. 원산지는 독일이고, 프랑스 귀족 여성들에 의해 인기를 얻어 널리 번식되었다.';
-            dic_class2information['시추'] = '시추는 중국에서 비롯한 개 품종이며 과거 중국 황실이 기르던 견종이다.';
+            dic_class2information['김민주'] = '매니지먼트 숲 소속 전 12인조 그룹 IZONE의 멤버';
+            dic_class2information['장원영'] = '스타쉽엔터테인먼트 소속 6인조 걸그룹 IVE의 멤버.';
+            dic_class2information['제니'] = 'YG엔터테인먼트 소속 4인조 걸그룹 BLACKPINK의 메인래퍼이자 리드보컬';
             var image = document.getElementById("face-image");
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
